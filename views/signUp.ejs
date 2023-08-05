@@ -1,0 +1,338 @@
+<!-- Facebook Auth Area -->
+<div class="fb-auth">
+  <div class="auth-wraper">
+    <div class="auth-left">
+      <img src="./assets/icons/facebook.svg" alt="" />
+      <h2>
+        Facebook helps you connect and share with the people in your life.
+      </h2>
+    </div>
+    <div class="auth-right">
+      <div class="auth-box">
+        <form action="">
+          <div class="auth-form">
+            <input type="text" placeholder="Email address or phone number" />
+          </div>
+          <div class="auth-form">
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="auth-form">
+            <button type="submit">Log In</button>
+          </div>
+        </form>
+
+        <a href="#">Forgotten password?</a>
+
+        <div class="divider"></div>
+
+        <button class="openModal">Create New Account</button>
+      </div>
+      <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FB FOOTER AREA  -->
+<div class="fb-footer">
+  <div class="footer-wraper">
+    <div class="footer-top">
+      <ul>
+        <li><a href="#">English (UK)</a></li>
+        <li><a href="#">বাংলা</a></li>
+        <li><a href="#">অসমীয়া</a></li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">नेपाली</a></li>
+        <li><a href="#">Bahasa Indonesia</a></li>
+        <li><a href="#">العربية</a></li>
+        <li><a href="#">中文(简体)</a></li>
+        <li><a href="#">Bahasa Melayu</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Português (Brasil)</a></li>
+      </ul>
+    </div>
+    <div class="divider-0"></div>
+    <div class="footer-bottom">
+      <ul>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">Facebook Lite</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Meta Pay</a></li>
+        <li><a href="#">Oculus</a></li>
+        <li><a href="#">Portal</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Bulletin</a></li>
+        <li><a href="#">Fundraisers</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Voting Information Centre</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Create ad</a></li>
+        <li><a href="#">Create Page</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Privacy Centre</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">AdChoices</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact uploading and non-users</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Activity log</a></li>
+      </ul>
+    </div>
+    <p>Meta © 2022</p>
+  </div>
+</div>
+
+<!-- MODAL BOX  -->
+<div class="blur-box">
+  <div class="sign-up-card">
+    <div class="sign-up-header">
+      <div class="sign-up-content">
+        <span>Sign Up</span>
+        <span>It's quick and easy.</span>
+      </div>
+      <% if (message) { %>
+      <p style="color: green"><%= message %></p>
+      <% } %> <% if (err) { %>
+      <p style="color: red"><%= err %></p>
+      <% } %>
+      <button class="closeBtn">
+        <img src="./assets/icons/cross.png" alt="" />
+      </button>
+    </div>
+    <div class="sign-up-body">
+      <form id="userSign" action="/signUp" method="post">
+        <div class="reg-form reg-form-inline">
+          <input name="name" type="text" placeholder="First Name" />
+          <input name="surename" type="text" placeholder="Surename" />
+        </div>
+        <div class="reg-form">
+          <input name="email" type="text" placeholder=" email address" />
+        </div>
+        <div class="reg-form">
+          <input name="password" type="password" placeholder="New password" />
+        </div>
+        <div class="reg-form">
+          <span>Date of birth</span>
+          <div class="reg-form-select">
+            <select name="birthDay" id="">
+              <option value="">Day</option>
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12" >12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select name="birthMon" id="">
+              <option value="">Month</option>
+              <option value="1">Jan</option>
+              <option value="2">Feb</option>
+              <option value="3">Mar</option>
+              <option value="4">Apr</option>
+              <option value="5">May</option>
+              <option value="6">Jun</option>
+              <option value="7">Jul</option>
+              <option value="8">Aug</option>
+              <option value="9">Sep</option>
+              <option value="10">Oct</option>
+              <option value="11">Nov</option>
+              <option value="12" >Dec</option>
+            </select>
+            <select name="birthYear" id="">
+              <option value="">Year</option>
+              <option value="2022" >2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+              <option value="1999">1999</option>
+              <option value="1998">1998</option>
+              <option value="1997">1997</option>
+              <option value="1996">1996</option>
+              <option value="1995">1995</option>
+              <option value="1994">1994</option>
+              <option value="1993">1993</option>
+              <option value="1992">1992</option>
+              <option value="1991">1991</option>
+              <option value="1990">1990</option>
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1986">1986</option>
+              <option value="1985">1985</option>
+              <option value="1984">1984</option>
+              <option value="1983">1983</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+              <option value="1979">1979</option>
+              <option value="1978">1978</option>
+              <option value="1977">1977</option>
+              <option value="1976">1976</option>
+              <option value="1975">1975</option>
+              <option value="1974">1974</option>
+              <option value="1973">1973</option>
+              <option value="1972">1972</option>
+              <option value="1971">1971</option>
+              <option value="1970">1970</option>
+              <option value="1969">1969</option>
+              <option value="1968">1968</option>
+              <option value="1967">1967</option>
+              <option value="1966">1966</option>
+              <option value="1965">1965</option>
+              <option value="1964">1964</option>
+              <option value="1963">1963</option>
+              <option value="1962">1962</option>
+              <option value="1961">1961</option>
+              <option value="1960">1960</option>
+              <option value="1959">1959</option>
+              <option value="1958">1958</option>
+              <option value="1957">1957</option>
+              <option value="1956">1956</option>
+              <option value="1955">1955</option>
+              <option value="1954">1954</option>
+              <option value="1953">1953</option>
+              <option value="1952">1952</option>
+              <option value="1951">1951</option>
+              <option value="1950">1950</option>
+              <option value="1949">1949</option>
+              <option value="1948">1948</option>
+              <option value="1947">1947</option>
+              <option value="1946">1946</option>
+              <option value="1945">1945</option>
+              <option value="1944">1944</option>
+              <option value="1943">1943</option>
+              <option value="1942">1942</option>
+              <option value="1941">1941</option>
+              <option value="1940">1940</option>
+              <option value="1939">1939</option>
+              <option value="1938">1938</option>
+              <option value="1937">1937</option>
+              <option value="1936">1936</option>
+              <option value="1935">1935</option>
+              <option value="1934">1934</option>
+              <option value="1933">1933</option>
+              <option value="1932">1932</option>
+              <option value="1931">1931</option>
+              <option value="1930">1930</option>
+              <option value="1929">1929</option>
+              <option value="1928">1928</option>
+              <option value="1927">1927</option>
+              <option value="1926">1926</option>
+              <option value="1925">1925</option>
+              <option value="1924">1924</option>
+              <option value="1923">1923</option>
+              <option value="1922">1922</option>
+              <option value="1921">1921</option>
+              <option value="1920">1920</option>
+              <option value="1919">1919</option>
+              <option value="1918">1918</option>
+              <option value="1917">1917</option>
+              <option value="1916">1916</option>
+              <option value="1915">1915</option>
+              <option value="1914">1914</option>
+              <option value="1913">1913</option>
+              <option value="1912">1912</option>
+              <option value="1911">1911</option>
+              <option value="1910">1910</option>
+              <option value="1909">1909</option>
+              <option value="1908">1908</option>
+              <option value="1907">1907</option>
+              <option value="1906">1906</option>
+              <option value="1905">1905</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="reg-form">
+          <span>Gender</span>
+          <div class="reg-form-select">
+            <label>
+              Female
+              <input value="Female" name="gender" type="radio" name="gender" />
+            </label>
+            <label>
+              Male
+              <input value="Male" name="gender" type="radio" name="gender" />
+            </label>
+            <label>
+              Custom
+              <input value="Custom" name="gender" type="radio" name="gender" />
+            </label>
+          </div>
+        </div>
+
+        <div class="reg-form">
+          <p>
+            People who use our service may have uploaded your contact
+            information to Facebook. <a href="#">Learn more.</a>
+          </p>
+        </div>
+        <div class="reg-form">
+          <p>
+            By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+            <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.
+            You may receive SMS notifications from us and can opt out at any
+            time.
+          </p>
+        </div>
+
+        <div class="reg-form">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
